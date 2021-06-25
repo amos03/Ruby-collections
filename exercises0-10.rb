@@ -176,5 +176,7 @@ def add_key_value_to_hash (hash, name, key, value)
     puts "---------------------------"
 end
 
-add_key_value_to_hash(dictionary, "dictionary",:prevaricate, "to speak or act evasively")
-
+add_key_value_to_hash(dictionary, "Dictionary",:prevaricate, "to speak or act evasively")
+add_key_value_to_hash(films, "Film", :Rashomon, 1950)
+add_key_value_to_hash(populations_cities, "City Populations", "Shiraz", 1566000)
+add_key_value_to_hash(friends_ages, "Friends' Ages", "Batya", 39)
