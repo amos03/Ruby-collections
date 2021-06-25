@@ -122,3 +122,15 @@ p reverse_array (sort_array(ages_of_siblings_cousins))
 p reverse_array (sort_array(performing_artists))
 p reverse_array (sort_array(colors_symbols))
 puts "---------------------------"
+
+#Exercise 3
+puts "3.1 Print out a sentence using each item in the array."
+
+def every_item_in_array (array)
+    array.each do |item|
+        puts "My favorite color is #{item}."
+    end
+puts "---------------------------"
+end
+
+every_item_in_array(colors)
