@@ -163,5 +163,18 @@ puts "---------------------------"
 end
 
 append_to_array(colors, "tkhelet")
+append_to_array(ages_of_siblings_cousins, 18)
+append_to_array(coin_toss_heads, false)
+append_to_array(performing_artists, "Shlomi Shabbat")
+append_to_array(colors_symbols, :tkhelet)
 
 puts "4.1 Add a new key-value pair to each one of your hashes."
+def add_key_value_to_hash (hash, name, key, value)
+    puts "Adding \"#{key}\" and \"#{value}\" to your #{name} hash."
+    hash[:"#{key}"]=value
+    p hash
+    puts "---------------------------"
+end
+
+add_key_value_to_hash(dictionary, "dictionary",:prevaricate, "to speak or act evasively")
+
