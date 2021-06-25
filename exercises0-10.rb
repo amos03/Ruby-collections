@@ -7,7 +7,7 @@ colors_symbols=[:"blue", :"grey", :"black", :"light_blue", :"silver"]
 
 #Exercise 0.2: Setting up hashes
 dictionary = {logomachy: "an argument about words", cryptozoology: "the study of animals whose existence has not yet been proven", doryphore: "a vexatious critic of others, often focused on minutiae"}
-films = [{name: "The Departed", year: 2006}, {name: "Footnote", year: 2011}, {name: "Seven Samurai", year: 1954}]
+films = {"The Departed": 2006, "Footnote": 2011, "Seven Samurai": 1954}
 populations_cities = {Seoul: 97600000, Palo_Alto: 56000, Tekoa: 4076}
 friends_ages = {Noah: 40, Chaim: 33, Robert: 38, Jun: 50}
 
@@ -83,7 +83,7 @@ puts "---------------------------"
 #Exercise 1.2 - Displaying Hash Values
 puts "Display One Stored Value From Each Hash:"
 p dictionary[:logomachy]
-p films.sample[:name]
+p films[:"The Departed"]
 p populations_cities[:Tekoa]
 p friends_ages[:Noah]
 puts "---------------------------"
@@ -149,3 +149,4 @@ puts "---------------------------"
 end
 
 every_item_in_hash(dictionary, "The word", "means")
+every_item_in_hash(films, "I like the film", "which came out in")
