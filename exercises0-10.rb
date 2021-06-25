@@ -6,7 +6,7 @@ performing_artists=["Ishay Ribo", "Chanan ben Ari", "Idan Raichel"]
 colors_symbols=[:"blue", :"grey", :"black", :"light_blue", :"silver"] 
 
 #Exercise 0.2: Setting up hashes
-dictionary = {logomachy: "An argument about words.", cryptozoology: "The study of animals whose existence has not yet been proven.", doryphore: "A vexatious critic of others, often focused on minutiae."}
+dictionary = {logomachy: "an argument about words", cryptozoology: "the study of animals whose existence has not yet been proven", doryphore: "a vexatious critic of others, often focused on minutiae"}
 films = [{name: "The Departed", year: 2006}, {name: "Footnote", year: 2011}, {name: "Seven Samurai", year: 1954}]
 populations_cities = {Seoul: 97600000, Palo_Alto: 56000, Tekoa: 4076}
 friends_ages = {Noah: 40, Chaim: 33, Robert: 38, Jun: 50}
@@ -135,3 +135,17 @@ end
 
 every_item_in_array(colors, "My favorite color is")
 every_item_in_array(ages_of_siblings_cousins, "My favorite cousin is")
+every_item_in_array(coin_toss_heads, "True or false: The coin I tossed came up heads.")
+every_item_in_array(performing_artists, "I really like the musician")
+every_item_in_array(colors_symbols, "My favorite color symbol is")
+
+puts "3.2 Print out a sentence using each key and value from your hash."
+
+def every_item_in_hash (hash, sentence_string1, sentence_string2)
+    hash.each do |k,v|
+        puts "#{sentence_string1} #{k} #{sentence_string2} #{v}."
+    end
+puts "---------------------------"
+end
+
+every_item_in_hash(dictionary, "The word", "means")
