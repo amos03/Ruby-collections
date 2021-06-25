@@ -8,7 +8,7 @@ colors_symbols=[:"blue", :"grey", :"black", :"light_blue", :"silver"]
 #Exercise 0.2: Setting up hashes
 dictionary = {logomachy: "an argument about words", cryptozoology: "the study of animals whose existence has not yet been proven", doryphore: "a vexatious critic of others, often focused on minutiae"}
 films = {"The Departed": 2006, "Footnote": 2011, "Seven Samurai": 1954}
-populations_cities = {Seoul: 97600000, Palo_Alto: 56000, Tekoa: 4076}
+populations_cities = {Seoul: 97600000, "Palo Alto": 56000, Tekoa: 4076}
 friends_ages = {Noah: 40, Chaim: 33, Robert: 38, Jun: 50}
 
 #Exercise 1.1 - Displaying Array Items
@@ -150,3 +150,5 @@ end
 
 every_item_in_hash(dictionary, "The word", "means")
 every_item_in_hash(films, "I like the film", "which came out in")
+every_item_in_hash(populations_cities, "The city", "has a population of")
+every_item_in_hash(friends_ages, "My friend", "is")
