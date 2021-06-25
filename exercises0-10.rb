@@ -126,11 +126,12 @@ puts "---------------------------"
 #Exercise 3
 puts "3.1 Print out a sentence using each item in the array."
 
-def every_item_in_array (array)
+def every_item_in_array (array, sentence_string)
     array.each do |item|
-        puts "My favorite color is #{item}."
+        puts "#{sentence_string} #{item}."
     end
 puts "---------------------------"
 end
 
-every_item_in_array(colors)
+every_item_in_array(colors, "My favorite color is")
+every_item_in_array(ages_of_siblings_cousins, "My favorite cousin is")
