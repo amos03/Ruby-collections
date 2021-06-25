@@ -86,4 +86,19 @@ p dictionary[:logomachy]
 p films.sample[:name]
 p populations_cities[:Tekoa]
 p friends_ages[:Noah]
+puts "---------------------------"
 
+#Exercise 2
+
+#method for reversing array
+def reverse_array (array)
+    return array.reverse
+end
+
+puts "Print arrays in reverse"
+p reverse_array (colors)
+p reverse_array (ages_of_siblings_cousins)
+p reverse_array (coin_toss_heads)
+p reverse_array(performing_artists)
+p reverse_array (colors_symbols)
+puts "---------------------------"
