@@ -11,7 +11,7 @@ films = [{name: "The Departed", year: 2006}, {name: "Footnote", year: 2011}, {na
 populations_cities = {Seoul: 97600000, Palo_Alto: 56000, Tekoa: 4076}
 friends_ages = {Noah: 40, Chaim: 33, Robert: 38, Jun: 50}
 
-#Exercise 1
+#Exercise 1.1 - Displaying Array Items
 
 def print_array_first_item (array_name)
     p array_name[0]
@@ -63,6 +63,7 @@ print_array_last_two_items(ages_of_siblings_cousins)
 print_array_last_two_items(coin_toss_heads)
 print_array_last_two_items(performing_artists)
 print_array_last_two_items(colors_symbols)
+puts "---------------------------"
 
 # QUESTION for SREE AND ELVIS:
 # Trying to automate so that I don't have to manually enter method followed by array name for each array separately
@@ -78,3 +79,11 @@ print_array_last_two_items(colors_symbols)
 # end
 
 # print_all_my_arrays_first_items(names_of_my_arrays)
+
+#Exercise 1.2 - Displaying Hash Values
+puts "Display One Stored Value From Each Hash:"
+p dictionary[:logomachy]
+p films.sample[:name]
+p populations_cities[:Tekoa]
+p friends_ages[:Noah]
+
