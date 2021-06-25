@@ -95,10 +95,30 @@ def reverse_array (array)
     return array.reverse
 end
 
+#method for sorting array
+def sort_array (array)
+    return array.sort
+end
+
 puts "Print arrays in reverse"
 p reverse_array (colors)
 p reverse_array (ages_of_siblings_cousins)
 p reverse_array (coin_toss_heads)
 p reverse_array(performing_artists)
 p reverse_array (colors_symbols)
+puts "---------------------------"
+
+puts "Print sorted arrays"
+p sort_array (colors)
+p sort_array (ages_of_siblings_cousins)
+# p sort_array (coin_toss_heads)
+p sort_array (performing_artists)
+ p sort_array (colors_symbols)
+puts "---------------------------"
+
+puts "Sort array, reverse, and print"
+p reverse_array (sort_array(colors))
+p reverse_array (sort_array(ages_of_siblings_cousins))
+p reverse_array (sort_array(performing_artists))
+p reverse_array (sort_array(colors_symbols))
 puts "---------------------------"
