@@ -152,3 +152,16 @@ every_item_in_hash(dictionary, "The word", "means")
 every_item_in_hash(films, "I like the film", "which came out in")
 every_item_in_hash(populations_cities, "The city", "has a population of")
 every_item_in_hash(friends_ages, "My friend", "is")
+
+puts "4.1 Append an element to each one of your arrays."
+
+def append_to_array (array, item)
+    puts "Adding \"#{item}\" to array #{array}"
+    array.push(item)
+    p array
+puts "---------------------------"
+end
+
+append_to_array(colors, "tkhelet")
+
+puts "4.1 Add a new key-value pair to each one of your hashes."
