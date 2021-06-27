@@ -211,5 +211,9 @@ while counter < 20
     counter +=1 
     puts "I will not skateboard in the halls"
 end
+puts "---------------------------"
+
+puts "Array of the same message:"
+p skateboard_array = Array.new(20, "I will not skateboard in the halls")
 
 puts "---------------------------"
