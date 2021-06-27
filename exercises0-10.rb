@@ -217,3 +217,16 @@ puts "Array of the same message:"
 p skateboard_array = Array.new(20, "I will not skateboard in the halls")
 
 puts "---------------------------"
+puts "Add numbers 1 to 50 to array"
+counter =0
+fifty_numbers_array = Array.new
+while counter <50
+    counter +=1
+    fifty_numbers_array.push(counter) 
+end
+p fifty_numbers_array
+
+# counter=0
+# while counter < 50
+#     counter +=1
+#     fifty_numbers = Array.new
