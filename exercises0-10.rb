@@ -180,3 +180,36 @@ add_key_value_to_hash(dictionary, "Dictionary",:prevaricate, "to speak or act ev
 add_key_value_to_hash(films, "Film", :Rashomon, 1950)
 add_key_value_to_hash(populations_cities, "City Populations", "Shiraz", 1566000)
 add_key_value_to_hash(friends_ages, "Friends' Ages", "Batya", 39)
+
+#Exercise 5
+# Make a new hash that contains a list of movies for each year. Each list of movies should be an array. Below is some data you can use.
+# 1999: The Matrix, Star Wars: Episode 1, The Mummy
+# 2009: Avatar, Star Trek, District 9
+# 2019: How to Train Your Dragon 3, Toy Story 4, Star Wars: Episode 9
+puts "Hash of Films by Year"
+
+p films_by_year={1995=> ["The Usual Suspects", "Appolo 13","12 Monkeys", "Blue in the Face", "Before Sunrise", "Le Confessionnal", "Ulysses' Gaze"],
+ 1999=>["The Matrix", "Being John Malkovich", "Star Wars: Episode 1"]}
+ puts "---------------------------"
+
+ #Array of buttons on phone by row
+ puts "Phone buttons in an array"
+ phone=[[1, 2, 3],[4,5,6],[7,8,9],["*",0,"#"]]
+ p phone
+ puts "---------------------------"
+
+ #Countries
+ puts "Array of Countries with Hashes Inside"
+p countries=[{name: "Malta", continent: "Europe", is_island: true}, {name: "Botswana", continent: "Africa", is_island: false}, {name: "Laos", continent: "Asia", is_island: false}]
+puts "---------------------------"
+
+#Exercise 6 - More Iteration
+puts "Output the message 'I will not skateboard in the halls' twenty times."
+
+counter=0
+while counter < 20
+    counter +=1 
+    puts "I will not skateboard in the halls"
+end
+
+puts "---------------------------"
