@@ -225,8 +225,16 @@ while counter <50
     fifty_numbers_array.push(counter) 
 end
 p fifty_numbers_array
+puts "---------------------------"
 
-# counter=0
-# while counter < 50
-#     counter +=1
-#     fifty_numbers = Array.new
+puts "Add up all the numbers in the 1-50 array:"
+
+puts "Using .sum as control: #{fifty_numbers_array.sum[0..-1]}."
+
+total=0
+fifty_numbers_array.each do |number|
+    total +=number 
+end
+
+puts "Using .each do loop: #{total}."
+
