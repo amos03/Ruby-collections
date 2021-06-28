@@ -271,5 +271,12 @@ performing_artists.each do |artist|
      puts "I enjoy listening to #{artist} #{age}."
  end
 end
+puts "---------------------------"
 
-# ages_array_with_only_three
+#Exercise 7.3
+puts "Original array of ages:"
+p ages_of_siblings_cousins
+new_ages=ages_of_siblings_cousins.map do |age| age+1
+end
+puts "Array of ages with 1 added to each age using .map:"
+p new_ages
