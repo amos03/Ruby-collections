@@ -260,12 +260,16 @@ colors_artists = color_upper_case + performing_artists
 p colors_artists.sort
 
 puts "When sorting elements that are mix of capitalized first letter and lower case, sort will sort upper case elements separately from lower case."
+puts "---------------------------"
 
 #Exercise 7.2
 # Using the array of ages and the array of favourite artists, output a message for each pair of items
 
+
 performing_artists.each do |artist|
-    p performing_artists[artist]
+    ages_array_with_only_three.each do |age|
+     puts "I enjoy listening to #{artist} #{age}."
+ end
 end
 
 # ages_array_with_only_three
