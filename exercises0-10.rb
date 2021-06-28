@@ -285,3 +285,10 @@ puts "---------------------------"
 #Exercise 7.4
 puts "Use the reduce method to add up the numbers in your ages array. Print the total sum as a sentence using string interpolation."
 puts "The sum of all the ages is #{ages_of_siblings_cousins.reduce(:+)}."
+puts "---------------------------"
+
+#Exercise 7.5
+new_coin_toss=["heads", "heads", "tails", "heads", "tails", "tails"]
+heads_results=new_coin_toss.select do |toss| toss=="heads"
+end
+p heads_results
