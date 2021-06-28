@@ -72,15 +72,17 @@ puts "---------------------------"
 # I want my method to take as argument each array in my list of array names
 # problem is that array stores each name as a string and the output therefore seems to have quotation marks
 #
-# names_of_my_arrays = ["colors", "ages_of_siblings_cousins", "coin_toss_heads", "performing_artists", "colors_symbols"]
-#
-# def print_all_my_arrays_first_items (names_array)
-#         names_array.each do |name_of_array|
-#         print_array_first_item (names_array[name_of_array])
-#     end
-# end
+names_of_my_arrays = [colors, ages_of_siblings_cousins, coin_toss_heads, performing_artists, colors_symbols]
 
-# print_all_my_arrays_first_items(names_of_my_arrays)
+def print_all_my_arrays_first_items(names_array)
+        names_array.each do |name_of_array|
+        print_array_first_item(name_of_array)
+end
+end
+
+puts "========================================================="
+print_all_my_arrays_first_items(names_of_my_arrays)
+puts "========================================================="
 
 #Exercise 1.2 - Displaying Hash Values
 puts "Display One Stored Value From Each Hash:"
