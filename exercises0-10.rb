@@ -1,7 +1,9 @@
 #Exercise 0.1: Setting up arrays
 colors = ["blue", "grey", "black", "light blue", "silver"]
+color_upper_case = ["Blue", "Grey", "Black", "Light blue", "Silver"]
 ages_of_siblings_cousins = [40, 39, 24, 38, 34, 28, 22]
 coin_toss_heads =[true, true, false, true, false]
+ages_array_with_only_three = [24, 34, 40]
 performing_artists=["Ishay Ribo", "Chanan ben Ari", "Idan Raichel"]
 colors_symbols=[:"blue", :"grey", :"black", :"light_blue", :"silver"] 
 
@@ -237,4 +239,33 @@ fifty_numbers_array.each do |number|
 end
 
 puts "Using .each do loop: #{total}."
+puts "---------------------------"
 
+puts "Exercise 6.5: Create a new array with three of each number from 1 to 50:"
+
+counter = 0
+fifty_triple_numbers_array=Array.new
+while counter <50
+    counter +=1
+    fifty_triple_numbers_array.push(counter,counter,counter)
+end
+p fifty_triple_numbers_array
+puts "---------------------------"
+
+#Exercise 7 Stretch
+#Exercise 7.1
+puts "Make a new array that consists of all the elements of your fav_colours and fav_artists arrays. Then sort the array and output it."
+
+colors_artists = color_upper_case + performing_artists
+p colors_artists.sort
+
+puts "When sorting elements that are mix of capitalized first letter and lower case, sort will sort upper case elements separately from lower case."
+
+#Exercise 7.2
+# Using the array of ages and the array of favourite artists, output a message for each pair of items
+
+performing_artists.each do |artist|
+    p performing_artists[artist]
+end
+
+# ages_array_with_only_three
