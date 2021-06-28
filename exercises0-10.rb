@@ -280,3 +280,8 @@ new_ages=ages_of_siblings_cousins.map do |age| age+1
 end
 puts "Array of ages with 1 added to each age using .map:"
 p new_ages
+puts "---------------------------"
+
+#Exercise 7.4
+puts "Use the reduce method to add up the numbers in your ages array. Print the total sum as a sentence using string interpolation."
+puts "The sum of all the ages is #{ages_of_siblings_cousins.reduce(:+)}."
